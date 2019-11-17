@@ -1,7 +1,95 @@
-color: #1b2a49
-color: #465881
-color: #00909e
-color: #c9d1d3
+/*
+Hoja de estilos de cascada para la plataforma web CDM
+Desarrollada por: Ángel Guzmán y Pablo Salazar
+17 de noviembre de 2019
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul,ol{
+	list-style: none;
+}
+
+body{
+	font-family: 'raleway';
+}
+
+.slideshow{
+	width: 100%;
+	position: relative;
+}
+
+.slider li, ul{
+	width: 100%;
+}
+
+.slider li{
+	overflow: hidden;
+}
+
+.slider li img{
+	width: 100%;
+}
+
+.slider .caption{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding: 15px 50px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+	color: #fff;
+	z-index: 1;
+}
+
+.slider h1{
+	font-size: 50px;
+}
+
+.slider {
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.left, .right{
+	position: absolute;
+	top: 0;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+
+	color: #fff;
+	font-size: 35px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.left{
+	left: 10px;
+}
+
+.right{
+	right: 10px;
+}
+
+@font-face{
+	font-family: raleway;
+	src: url(../fonts/Raleway-Medium.ttf);
+}
 
 .logo {
 	width: 40%;
@@ -187,6 +275,27 @@ textarea {
 	flex-flow: row wrap;
 }
 
+@media screen and (max-width: 600px){
+	.slider {
+		display: none;
+	}
+
+	.slider .caption h1{
+		font-size: 35px;
+	}
+
+	.left, .right{
+		font-size: 30px;
+	}
+
+	.slider li img{
+		width: 600px;
+	}
+
+	.pagination{
+		display: none;
+	}
+}
 
 @media screen and (max-width: 2028px) {
 
