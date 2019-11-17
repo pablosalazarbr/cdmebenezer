@@ -1,1 +1,240 @@
+color: #1b2a49
+color: #465881
+color: #00909e
+color: #c9d1d3
 
+.logo {
+	width: 40%;
+	float: left;
+	margin:50px;
+	padding: 10px 10px 10px 10px;
+}
+
+li{
+	display: inline-block;
+    font-size: 15px;
+    padding: 15px;
+    text-align: right;
+}
+
+.menu {
+	margin:auto;
+	float: left;
+	text-align: right;
+	width: 60%;
+	display: flex;
+	font-size: 40px;
+	color: #1b2a49;
+	padding: 10px 10px 10px 10px;
+}
+
+.imagenpor{
+	width: auto;
+	display: flex;
+}
+
+#imgp {
+	box-sizing: border-box;
+	width: 100%;
+	padding:0;
+	margin:0;
+	display: flex;	
+}
+
+.portada {
+
+	width: auto;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.cbien {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+
+.bienvenido {
+	text-align: center;
+	width: 100%;
+	background-color: #1b2a49;
+	box-sizing: border-box;
+	float:left;
+}
+
+.imgpas,#imgpas {
+	border-radius: 50px;
+	width:100%;
+}
+
+
+.textbienvenido {
+	float: left;
+	text-align: center;
+	background-color: #c9d1d3;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.servicio {
+	width: 100%;
+	background-color: #00909e;
+	box-sizing: border-box;
+}
+
+.carrito {
+	width: 100%;
+	background-color: #c9d1d3;
+	box-sizing: border-box;
+}
+
+.vivo {
+	background-color: #00909e;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.predica {
+	background-color: gray;
+	width: 100%;
+	box-sizing: border-box;
+
+}
+
+.actividades {
+	background-color: #1b2a30;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+
+.contacto {
+	width: 100%;
+	box-sizing: border-box;	
+}
+
+.mapa {
+
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+
+}
+
+.formulario {
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: 20px;
+}
+
+#nombre, #correo, #asunto, #telefono {
+	width: 80%;
+}
+
+textarea {
+	text-align: center;
+	border-radius: 20px;
+	width: 80%;
+	height: 40%;
+ }
+
+ input {
+ 	width: 80%;
+ 	height: 20%;
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: 20px;
+
+}
+#enviar {
+	width: 40%;
+	height: 20%;
+}
+
+.redes {
+	background-color: yellow;
+	width: 100%;
+	margin: auto;
+	padding: 0;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.footer {
+	box-sizing: border-box;
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	padding: 0;
+	background-color: gray;
+}
+
+.contenedor {
+
+	margin: auto;
+	padding: 0px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.contenedor {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+
+@media screen and (max-width: 2028px) {
+
+	.contenedor {
+
+		width: 100%;
+	}
+
+	.cbien {
+		width: 100%;
+	}
+
+	.mapa, .formulario {
+		width: 50%;
+		margin: auto;
+	}
+
+	.bienvenido, .textbienvenido {
+		width: 50%;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+
+	.contenedor {
+		width: 100%;
+	}
+
+}
+
+
+@media screen and (max-width: 450px){
+
+	.contenedor{
+		width: 100%;
+		margin: auto;
+	}
+
+	.mapa, .formulario {
+		width: 100%;
+		margin:auto;
+		display: flex;
+	}
+
+	.bienvenido, .textbienvenido {
+		width: 100%;
+		margin: auto;
+	} 
+	
+}
