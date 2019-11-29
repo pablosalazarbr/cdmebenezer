@@ -11,11 +11,11 @@ Desarrollado el domingo 17 de noviembre de 2019
 $(document).ready(function(){
 	var imgItems = $('.slider li').length; // Numero de Slides
 	var imgPos = 1;
-
+	
 	// Agregando paginacion --
 	for(i = 1; i <= imgItems; i++){
 		$('.pagination').append('<li><span class="fa fa-circle"></span></li>');
-	} 
+	}
 	//------------------------
 
 	$('.slider li').hide(); // Ocultanos todos los slides
@@ -49,7 +49,7 @@ $(document).ready(function(){
 	}
 
 	function nextSlider(){
-		if( imgPos >= imgItems){imgPos = 1;} 
+		if( imgPos >= imgItems){imgPos = 1;}
 		else {imgPos++;}
 
 		$('.pagination li').css({'color': '#858585'});
@@ -61,7 +61,7 @@ $(document).ready(function(){
 	}
 
 	function prevSlider(){
-		if( imgPos <= 1){imgPos = imgItems;} 
+		if( imgPos <= 1){imgPos = imgItems;}
 		else {imgPos--;}
 
 		$('.pagination li').css({'color': '#858585'});
